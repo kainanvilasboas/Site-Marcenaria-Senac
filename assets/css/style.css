@@ -1,0 +1,170 @@
+/* Definição de Cores e Estilo Base */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* Header com Flexbox */
+.navbar-area {
+    background-color: #1a1a1a;
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #dc3545;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* 1. Logo à Esquerda */
+.logo {
+    flex: 1;
+}
+
+.logo h1 {
+    color: #dc3545;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+/* 2. Menu Centralizado */
+.nav-links {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #dc3545;
+}
+
+/* 3. Redes Sociais à Direita */
+.rede-social {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.social-btn {
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.social-btn:hover {
+    color: #dc3545;
+    transform: translateY(-3px);
+}
+
+/* Seções */
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.section-title {
+    color: #dc3545;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.bg-darker {
+    background-color: #0a0a0a;
+}
+
+/* Botões Customizados */
+.btn-red {
+    background-color: #dc3545;
+    color: #ffffff;
+    padding: 15px 40px;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-red:hover {
+    background-color: #bd2130;
+    color: #ffffff;
+}
+
+/* Portfólio e Cards */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item, .service-card {
+    background-color: #1a1a1a;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333;
+    font-weight: bold;
+    color: #888;
+    transition: 0.3s;
+}
+
+.portfolio-item:hover, .service-card:hover {
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
+/* Formulário de Contato */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    color: #fff;
+    outline: none;
+}
+
+.contact-form input:focus {
+    border-color: #dc3545;
+}
+
+/* Footer */
+footer {
+    padding: 40px;
+    text-align: center;
+    background-color: #1a1a1a;
+    border-top: 1px solid #333;
+    font-size: 0.8rem;
+    color: #555;
+}
